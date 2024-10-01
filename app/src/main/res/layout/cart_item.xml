@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/test"
+    android:layout_marginBottom="8dp"
+    >
+
+    <!-- Hình ảnh sản phẩm -->
+    <ImageView
+        android:id="@+id/cartProductImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Tên sản phẩm -->
+    <TextView
+        android:id="@+id/cartProductNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/cartProductImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cartProductPriceTextView"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <!-- Giá sản phẩm -->
+    <TextView
+        android:id="@+id/cartProductPriceTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Giá sản phẩm"
+        android:textSize="15sp"
+        android:textColor="#DF1111"
+        app:layout_constraintStart_toEndOf="@id/cartProductImageView"
+        app:layout_constraintTop_toBottomOf="@id/cartProductNameTextView"
+        />
+
+    <!-- Điều khiển số lượng -->
+    <LinearLayout
+        android:id="@+id/quantityLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/cartProductPriceTextView"
+        app:layout_constraintStart_toEndOf="@id/cartProductImageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp">
+
+        <!-- Nút giảm số lượng -->
+        <ImageView
+            android:id="@+id/decreaseQuantityButtonCart"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_minus"
+            android:contentDescription="Giảm số lượng"
+            android:elevation="6dp" />
+
+        <!-- Hiển thị số lượng -->
+        <TextView
+            android:id="@+id/quantityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="#0B0A0A"
+            android:gravity="center"/>
+
+        <!-- Nút tăng số lượng -->
+        <ImageView
+            android:id="@+id/increaseQuantityButtonCart"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_plus"
+            android:contentDescription="Tăng số lượng"
+            android:elevation="6dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

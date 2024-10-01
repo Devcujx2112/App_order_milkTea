@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AppBanTraSua</string>
+
+    <string name="title_sanpham">Sản Phẩm</string>
+    <string name="title_account">Tài Khoản</string>
+    <string name="title_giohang">Giỏ Hàng</string>
+    <string name="title_thongke">Thống kê</string>
+    <string name="title_logout">Đăng xuất</string>
+
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

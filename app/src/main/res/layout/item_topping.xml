@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/toppingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Topping"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Chọn đường -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn đường"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/sugarRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/noSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không đường" />
+
+        <RadioButton
+            android:id="@+id/halfSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50% đường" />
+
+        <RadioButton
+            android:id="@+id/fullSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100% đường" />
+    </RadioGroup>
+
+    <!-- Chọn size -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn Size"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/sizeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/sizeL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size L" />
+
+        <RadioButton
+            android:id="@+id/sizeM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size M" />
+
+        <RadioButton
+            android:id="@+id/sizeS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size S" />
+    </RadioGroup>
+
+    <!-- Chọn đá -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn đá"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/iceRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/noIce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không đá" />
+
+        <RadioButton
+            android:id="@+id/halfIce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50% đá" />
+
+        <RadioButton
+            android:id="@+id/fullIce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100% đá" />
+    </RadioGroup>
+
+    <!-- Chọn vị phụ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn vị phụ"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/toppingRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/addJelly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm hạt dẻ" />
+
+        <RadioButton
+            android:id="@+id/addPearl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm trân châu" />
+
+        <RadioButton
+            android:id="@+id/addBasilSeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm hạt xương mai" />
+    </RadioGroup>
+
+    <!-- Nút xác nhận -->
+    <Button
+        android:id="@+id/confirmButtonTopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_gravity="center" />
+</LinearLayout>
